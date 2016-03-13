@@ -1,8 +1,8 @@
 
 @section('content')
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-6">
             <div class="panel panel-default">
                 <div class="panel-heading">Register</div>
                 <div class="panel-body">
@@ -76,6 +76,7 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
+<!-- Closing divs for top 2 are commented out because the ROW and COL span to the view auth.login  -->
+<!--     </div>
+</div> -->
 @endsection
