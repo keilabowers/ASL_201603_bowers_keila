@@ -8,11 +8,12 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Dashboard</div>
                     <div class="panel-body">
-                    <div class="col-md-4">
+
+                    <div class="col-md-4 sidebar">
                         <div class="thumbnail">
                             <img src="assets/images/test_profile.png" alt="profile_picture">
                             <div class="caption">
-                            <h3>{{ Auth::user()->name }}</h3>
+                            <h3 class="text-center">{{ Auth::user()->name }}</h3>
                             </div>
                         </div>
                     </div>

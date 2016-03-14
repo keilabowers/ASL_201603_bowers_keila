@@ -12,12 +12,6 @@
 */
 
 
-	Route::get('/', function () {
-		return view('welcome');	
-		
-	});	
- 
-
 
 
 /*
@@ -34,13 +28,12 @@
 
 Route::group(['middleware' => 'web'], function () {
 	
-	Route::get('/', function () {
-		return view('welcome');	
-	});		
+		Route::get('/', function () {
+			return view('welcome');	
+		});	
 
+		Route::auth();
 
-    Route::auth();
+		Route::get('/home', 'HomeController@index');
 
-    Route::get('/home', 'HomeController@index');
-    
 });

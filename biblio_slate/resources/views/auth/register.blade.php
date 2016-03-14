@@ -1,8 +1,8 @@
-
+@extends('layouts.app')
 @section('content')
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-default">
                 <div class="panel-heading">Register</div>
                 <div class="panel-body">
@@ -65,6 +65,14 @@
                             </div>
                         </div>
 
+<!--                         <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <label for="upload">File input</label>
+                                <input type="file" id="upload">
+                                <p class="help-block"></p>
+                            </div>
+                        </div> -->
+
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
@@ -76,7 +84,6 @@
                 </div>
             </div>
         </div>
-<!-- Closing divs for top 2 are commented out because the ROW and COL span to the view auth.login  -->
-<!--     </div>
-</div> -->
+    </div>
+</div>
 @endsection
