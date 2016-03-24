@@ -21,16 +21,16 @@
                     <div class="col-md-8">
 
                         <!-- Bootstrap Nav tabs -->
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="#readingLog" aria-controls="readingLog" role="tab" data-toggle="tab">Reading Log</a></li>
-                            <li role="presentation"><a href="#bookshelf" aria-controls="bookshelf" role="tab" data-toggle="tab">Bookshelf</a></li>
+                        <ul class="nav nav-tabs" role="tablist" id="myTabs">
+                            <li role="presentation" class="active"><a href="#readingLog" aria-controls="readingLog" data-url="readinglog">Reading Log</a></li>
+                            <li role="presentation"><a href="#bookshelf" aria-controls="bookshelf" role="tab" data-toggle="tab" data-url="/bookshelf">Bookshelf</a></li>
                             <li role="presentation"><a href="#library" aria-controls="library" role="tab" data-toggle="tab">Library</a></li>
                         </ul>
 
                         <!-- Tab panes -->
                         <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active" id="readingLog">...</div>
-                        <div role="tabpanel" class="tab-pane" id="bookshelf">...</div>
+                        <div role="tabpanel" class="tab-pane active" id="readingLog">@yield('readinglog')</div>
+                        <div role="tabpanel" class="tab-pane" id="bookshelf">@yield('bookshelf')</div>
                         <div role="tabpanel" class="tab-pane" id="library">...</div>
                         </div>
                     </div>
@@ -44,4 +44,5 @@
 
 
 @endsection
+
 

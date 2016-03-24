@@ -36,4 +36,7 @@ Route::group(['middleware' => 'web'], function () {
 
 		Route::get('/home', 'HomeController@index');
 
+		Route::resource('readinglog', 'ReadingLogController');
+		Route::resource('bookshelf', 'BookshelfController');
+
 });

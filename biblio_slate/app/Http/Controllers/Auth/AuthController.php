@@ -52,8 +52,29 @@ class AuthController extends Controller
             'name' => 'required|max:255',
             'email' => 'required|email|max:255|unique:users',
             'password' => 'required|confirmed|min:6',
+            
         ]);
     }
+
+    // protected function loginValidator(array $data)
+    // {
+    //     return Validator::make($data, [
+    //         'name' => 'required|max:255',
+    //         'email' => 'required|email|max:255|unique:users',
+    //         'password' => 'required|confirmed|min:6',
+            
+    //     ]);
+    // }
+
+    // protected function registerValidator(array $data)
+    // {
+    //     return registerValidator::make($data, [
+    //         'name' => 'required|max:255',
+    //         'email' => 'required|email|max:255|unique:users',
+    //         'password' => 'required|confirmed|min:6',
+            
+    //     ]);
+    // }
 
     /**
      * Create a new user instance after a valid registration.
